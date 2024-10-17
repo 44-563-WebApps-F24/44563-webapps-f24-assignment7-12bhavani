@@ -2,6 +2,6 @@
 # WebApps-F24-Assignment-7
 Assignment 7 on DOM
 
-Hosted at: https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment7-12bhavani/safari.html
-Hosted at: https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment7-12bhavani/precision.html
-Hosted at: https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment7-12bhavani/divlist.html
+Hosted at: https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment7-12bhavani/safari.html<br>
+Hosted at: https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment7-12bhavani/precision.html<br>
+Hosted at: https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment7-12bhavani/divlist.html<br>
