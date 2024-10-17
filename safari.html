@@ -93,6 +93,74 @@
             lionLocation = 14;
             gameOver = false;
 
+            /*let lionLocation = Math.floor(Math.random() * 36);
+            let zebraLocations = [];
+            while (zebraLocations.length < 5) {
+                let randomLoc = Math.floor(Math.random() * 36);
+                if (randomLoc !== lionLocation && !zebraLocations.includes(randomLoc)) {
+                    zebraLocations.push(randomLoc);
+                }
+            }
+
+            function check(position){
+                if(!gameOver){
+                    id = ids[position];
+                    img_ele = document.getElementById(id);
+                    if(position ==lionLocation){
+                        img_ele.src = "lion.jpg";
+                        gameOver = true;
+                        score -= 2;
+                    }
+                    else if(zebraLocations.includes(position)){
+                        img_ele.src = "zebra.jpg"
+                        score += 4;
+                    }
+                    else{
+                        img_ele.src = "elephant.jpg"
+                        score += 1;
+                    }
+                    locationsVisited += 1;
+                    lastLocation = position;
+                    document.getElementById("locations").innerHTML="Number of locations checked is "+ locationsVisited;
+                    document.getElementById("score").innerHTML="Score is "+ score;
+                    moveLion();
+                }
+            }
+
+            function moveLion() {
+                let direction = Math.floor(Math.random() * 4);
+                let newLocation = lionLocation;
+                const rows = 6;
+                const cols = 6;
+
+                if (direction === 0 && lionLocation % cols !== 0) {
+                    newLocation -= 1;
+                } else if (direction === 1 && (lionLocation + 1) % cols !== 0) {
+                    newLocation += 1;
+                } else if (direction === 2 && lionLocation >= cols) {
+                    newLocation -= cols;
+                } else if (direction === 3 && lionLocation < (rows - 1) * cols) {
+                    newLocation += cols;
+                }
+
+                if (!zebraLocations.includes(newLocation) && newLocation !== playerLocation) {
+                    lionLocation = newLocation;
+
+                    if (zebraLocations.includes(lionLocation)) {
+                        zebraLocations = zebraLocations.filter(loc => loc !== lionLocation);
+                        document.getElementById(ids[lionLocation]).src = "lion.jpg";
+                    } else {
+                        document.getElementById(ids[lionLocation]).src = "lion.jpg";
+                    }
+
+                    if (lionLocation === playerLocation) {
+                        gameOver = true;
+                    }
+                    } else {
+                        moveLion();
+                }
+            }*/
+
             function check(position){
                 if(!gameOver){
                     id = ids[position];

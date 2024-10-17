@@ -23,12 +23,30 @@
   
   <script> 
   stopTime = undefined;
+  rand_countdown;
+
   function recordTime() {
     stopTime = Date.now();
     console.log("Stop time recorded:", stopTime);
     }
   
-  function startTime(){
+    function startTime(){
+    /*rand_countdown = Math.floor(Math.random() * 9)+2;
+    for(let j=0; j<rand_countdown;j++){
+      setTimeout(function() {
+          document.getElementById("counter").innerHTML = j; 
+        },(((rand_countdown-1)-j)*1000))
+    }
+    setTimeout(function() {
+        if (stopTime === undefined) {
+          document.getElementById('target').innerHTML = "Too Slow";
+        } else {
+          let elapsed_Time = Date.now() - stopTime;
+          document.getElementById('target').innerHTML = "Time was " + elapsed_Time + " ms";
+        }
+      }, rand_countdown*1000);
+      */
+
     for(let i=0; i<5; i++){
       setTimeout(function() {
           document.getElementById("counter").innerHTML = i; 
@@ -43,9 +61,9 @@
         }
       }, 4000);
     }
-
-
+    
     document.getElementById("stopButton").onclick = recordTime;
+
     
   </script>
 
